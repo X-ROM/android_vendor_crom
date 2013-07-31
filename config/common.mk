@@ -24,6 +24,7 @@ PRODUCT_PACKAGES += \
     Camera \
     CMFileManager \
     CRoMWallpapers \
+    CTool \
     DashClock \
     Galaxy4 \
     HALO \
