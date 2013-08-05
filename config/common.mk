@@ -32,6 +32,7 @@ PRODUCT_PACKAGES += \
     Galaxy4 \
     HALO \
     HoloSpiralWallpaper \
+    Focal \
     LiveWallpapers \
     LiveWallpapersPicker \
     NoiseField \
