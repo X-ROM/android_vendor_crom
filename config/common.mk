@@ -46,10 +46,10 @@ PRODUCT_PACKAGES += \
     VoicePlus
 
 # CM Packages
-PRODUCT_PACKAGES += \
-    audio_effects.conf \
-    DSPManager \
-    libcyanogen-dsp
+#PRODUCT_PACKAGES += \
+#    audio_effects.conf \
+#    DSPManager \
+#    libcyanogen-dsp
 
 # prebuilts
 PRODUCT_PACKAGES += \
