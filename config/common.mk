@@ -119,7 +119,6 @@ PRODUCT_COPY_FILES += \
 
 # initd
 PRODUCT_COPY_FILES += \
-    vendor/crom/prebuilt/common/etc/init.d/S99smoothness:system/etc/init.d/S99smoothness \
     vendor/crom/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit \
     vendor/crom/prebuilt/common/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
     vendor/crom/prebuilt/common/etc/liberty.bsh:system/etc/liberty.bsh \
@@ -137,12 +136,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
   pm.sleep_mode=0 \
   video.accelerate.hw=1 \
   persist.sys.root_access=3
-
-# ROM Statistics and ROM Identification
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.romstats.url=http://stats.c-rom.biz/stats \
-ro.romstats.name=C-RoM \
-ro.romstats.version=$(CROM_VERSION)
 
 # Compcache/Zram support
 PRODUCT_COPY_FILES += \
@@ -166,16 +159,9 @@ PRODUCT_COPY_FILES += \
     vendor/crom/prebuilt/common/bin/99-backup.sh:system/addon.d/99-backup.sh \
     vendor/crom/prebuilt/common/etc/backup.conf:system/etc/backup.conf
 
-# Don't export PS1 in /system/etc/mkshrc.
-PRODUCT_COPY_FILES += \
-    vendor/crom/prebuilt/common/etc/mkshrc:system/etc/mkshrc \
-    vendor/crom/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf
-
 # sip/voip
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
-
-TARGET_USE_O3 := true
 
 # version
 RELEASE = false
@@ -185,3 +171,10 @@ CROM_VERSION := "C-RoM"$(CROM_VERSION_MAJOR).$(CROM_VERSION_MINOR)
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.crom.version=$(CROM_VERSION)
+
+# ROM Statistics and ROM Identification
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.romstats.url=http://stats.c-rom.biz \
+ro.romstats.name=C-RoM \
+ro.romstats.version=$(CROM_VERSION)
+
