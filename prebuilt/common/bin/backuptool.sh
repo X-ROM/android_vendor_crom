@@ -21,7 +21,7 @@ restore_addon_d() {
 }
 
 # Proceed only if /system is the expected major and minor version
-check_prereq() {
+check_version() {
 if ( ! grep -q "^ro.crom.version=$V.*" /system/build.prop ); then
   echo "Not backing up files from incompatible version: $V"
   exit 127
@@ -48,8 +48,8 @@ done
 
 case "$1" in
   backup)
+    check_version
     mkdir -p $C
-    check_prereq
     check_blacklist system
     preserve_addon_d
     run_stage pre-backup
@@ -57,7 +57,7 @@ case "$1" in
     run_stage post-backup
   ;;
   restore)
-    check_prereq
+    check_version
     check_blacklist tmp
     run_stage pre-restore
     run_stage restore
