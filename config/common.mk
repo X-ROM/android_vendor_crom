@@ -90,8 +90,8 @@ PRODUCT_PACKAGES += \
     start-ssh
 
 # launcher
-PRODUCT_COPY_FILES += \
-    vendor/crom/proprietary/NovaLauncher/NovaLauncher.apk:system/app/NovaLauncher.apk
+#PRODUCT_COPY_FILES += \
+#    vendor/crom/proprietary/NovaLauncher/NovaLauncher.apk:system/app/NovaLauncher.apk
 
 # RomStats
 PRODUCT_COPY_FILES += \
