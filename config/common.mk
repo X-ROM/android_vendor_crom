@@ -183,3 +183,4 @@ ro.romstats.url=http://stats.c-rom.biz \
 ro.romstats.name=C-RoM \
 ro.romstats.version=$(CROM_VERSION)
 
+-include vendor/crom/sepolicy/sepolicy.mk
