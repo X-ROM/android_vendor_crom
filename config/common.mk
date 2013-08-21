@@ -29,6 +29,7 @@ PRODUCT_PACKAGES += \
     CRoMWallpapers \
     CTool \
     DashClock \
+    Development \
     Galaxy4 \
     HALO \
     HoloSpiralWallpaper \
