@@ -98,6 +98,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/crom/proprietary/RomStats/RomStats.apk:system/app/RomStats.apk
 
+# SunBeam LWP
+PRODUCT_COPY_FILES += \
+    vendor/crom/prebuilt/common/app/SunBeam.apk:system/app/SunBeam.apk
+
 # Update Me
 PRODUCT_COPY_FILES += \
     vendor/crom/proprietary/UpdateMe/UpdateMe.apk:system/app/UpdateMe.apk
