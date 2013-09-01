@@ -169,10 +169,6 @@ PRODUCT_COPY_FILES += \
     vendor/crom/prebuilt/common/bin/99-backup.sh:system/addon.d/99-backup.sh \
     vendor/crom/prebuilt/common/etc/backup.conf:system/etc/backup.conf
 
-# block stock OTAs
-PRODUCT_COPY_FILES += \
-    vendor/crom/prebuilt/common/bin/otablock:system/bin/otablock
-
 # sip/voip
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
