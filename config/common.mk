@@ -42,6 +42,7 @@ PRODUCT_PACKAGES += \
     PhaseBeam \
     BlueBalls \
     PhotoTable \
+    ROMStats \
     SunBeam \
     Superuser \
     su \
@@ -93,10 +94,6 @@ PRODUCT_PACKAGES += \
 # launcher
 PRODUCT_COPY_FILES += \
     vendor/crom/proprietary/NovaLauncher/NovaLauncher.apk:system/app/NovaLauncher.apk
-
-# RomStats
-PRODUCT_COPY_FILES += \
-    vendor/crom/proprietary/RomStats/RomStats.apk:system/app/RomStats.apk
 
 # SunBeam LWP
 PRODUCT_COPY_FILES += \
@@ -184,8 +181,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # ROM Statistics and ROM Identification
 PRODUCT_PROPERTY_OVERRIDES += \
-ro.romstats.url=http://stats.c-rom.biz \
+ro.romstats.askfirst=1 \
+ro.romstats.ga=UA-0000000-0 \
 ro.romstats.name=C-RoM \
+ro.romstats.url=http://stats.c-rom.biz \
 ro.romstats.version=$(CROM_VERSION)
 
 -include vendor/crom/sepolicy/sepolicy.mk
