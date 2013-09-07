@@ -28,6 +28,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     Apollo \
     BlueBalls \
+    BluetoothExt \
     Calendar \
     Camera \
     CMFileManager \
@@ -38,7 +39,6 @@ PRODUCT_PACKAGES += \
     Galaxy4 \
     HALO \
     HoloSpiralWallpaper \
-    Focal \
     LiveWallpapers \
     LiveWallpapersPicker \
     NoiseField \
