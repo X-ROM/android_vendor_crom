@@ -46,6 +46,7 @@ PRODUCT_PACKAGES += \
     SunBeam \
     Superuser \
     su \
+    Trebuchet \
     VoicePlus
 
 # CM Packages
