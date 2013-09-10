@@ -138,6 +138,7 @@ PRODUCT_COPY_FILES += \
 
 # build.prop tweaks
 PRODUCT_PROPERTY_OVERRIDES += \
+  lpa.decode=false \
   ro.kernel.android.checkjni=0 \
   ro.media.enc.jpeg.quality=100 \
   debug.sf.hw=1 \
