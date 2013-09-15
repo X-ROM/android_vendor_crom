@@ -108,7 +108,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/crom/proprietary/UpdateMe/UpdateMe.apk:system/app/UpdateMe.apk
 
-# languages
+# Languages
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # themes
