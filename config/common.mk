@@ -111,7 +111,7 @@ PRODUCT_COPY_FILES += \
 # Languages
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-# themes
+# Themes
 include vendor/crom/config/theme_chooser.mk
 
 #korean
