@@ -96,7 +96,7 @@ PRODUCT_PACKAGES += \
     ssh-keygen \
     start-ssh
 
-# launcher
+# Launcher
 #PRODUCT_COPY_FILES += \
 #    vendor/crom/proprietary/NovaLauncher/NovaLauncher.apk:system/app/NovaLauncher.apk
 
