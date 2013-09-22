@@ -32,7 +32,6 @@ PRODUCT_PACKAGES += \
     Calendar \
     Camera \
     CMFileManager \
-    CRoMWallpapers \
     CTool \
     DashClock \
     Development \
@@ -51,7 +50,8 @@ PRODUCT_PACKAGES += \
     Superuser \
     su \
     Trebuchet \
-    VoicePlus
+    VoicePlus \
+    Wallpapers
 
 # CM Packages
 PRODUCT_PACKAGES += \
