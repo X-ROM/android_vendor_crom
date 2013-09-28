@@ -50,8 +50,7 @@ PRODUCT_PACKAGES += \
     Superuser \
     su \
     Trebuchet \
-    VoicePlus \
-    Wallpapers
+    VoicePlus
 
 # CM Packages
 PRODUCT_PACKAGES += \
