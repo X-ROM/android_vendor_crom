@@ -145,7 +145,6 @@ PRODUCT_COPY_FILES += \
 
 # build.prop tweaks
 PRODUCT_PROPERTY_OVERRIDES += \
-  lpa.decode=false \
   ro.kernel.android.checkjni=0 \
   ro.media.enc.jpeg.quality=100 \
   debug.sf.hw=1 \
@@ -181,7 +180,7 @@ PRODUCT_COPY_FILES += \
 
 # version
 RELEASE = false
-CROM_VERSION_MAJOR = 7
+CROM_VERSION_MAJOR = 8
 CROM_VERSION_MINOR = 0
 CROM_VERSION := "C-RoM-v"$(CROM_VERSION_MAJOR).$(CROM_VERSION_MINOR)
 
