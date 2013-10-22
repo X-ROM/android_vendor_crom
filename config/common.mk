@@ -96,8 +96,8 @@ PRODUCT_PACKAGES += \
     start-ssh
 
 # Launcher
-#PRODUCT_COPY_FILES += \
-#    vendor/crom/proprietary/NovaLauncher/NovaLauncher.apk:system/app/NovaLauncher.apk
+PRODUCT_COPY_FILES += \
+    vendor/crom/proprietary/NovaLauncher/NovaLauncher.apk:system/app/NovaLauncher.apk
 
 # SunBeam LWP
 PRODUCT_COPY_FILES += \
@@ -126,7 +126,7 @@ PRODUCT_COPY_FILES += \
 
 # etc
 PRODUCT_COPY_FILES += \
-    vendor/crom/prebuilt/common/etc/init.crom.rc:root/init.crom.rc
+    vendor/crom/prebuilt/common/etc/init.local.rc:root/init.crom.rc
 
 # initd
 PRODUCT_COPY_FILES += \
