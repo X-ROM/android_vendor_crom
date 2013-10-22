@@ -49,7 +49,7 @@ PRODUCT_PACKAGES += \
     SunBeam \
     Superuser \
     su \
-    Trebuchet \
+#   Trebuchet \
     VoicePlus
 
 # CM Packages
