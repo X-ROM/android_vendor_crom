@@ -176,7 +176,7 @@ PRODUCT_COPY_FILES += \
 
 # version
 RELEASE = false
-CROM_VERSION_MAJOR = 8
+CROM_VERSION_MAJOR = 10
 CROM_VERSION_MINOR = 0
 CROM_VERSION := "C-RoM-v"$(CROM_VERSION_MAJOR).$(CROM_VERSION_MINOR)
 
@@ -188,7 +188,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ro.romstats.askfirst=1 \
 ro.romstats.ga=UA-20205669-1 \
 ro.romstats.name=C-RoM \
-ro.romstats.url=http://stats.c-rom.biz \
+ro.romstats.url=http://stats.c-rom.org \
 ro.romstats.version=$(CROM_VERSION)
 
 -include vendor/crom/sepolicy/sepolicy.mk
