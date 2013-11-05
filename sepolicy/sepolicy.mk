@@ -3,8 +3,9 @@
 # inherit from C-RoM
 #
 
-BOARD_SEPOLICY_DIRS := \
+BOARD_SEPOLICY_DIRS += \
     vendor/crom/sepolicy
 
-BOARD_SEPOLICY_UNION := \
+BOARD_SEPOLICY_UNION += \
+    seapp_contexts \
     mac_permissions.xml

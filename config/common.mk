@@ -190,5 +190,3 @@ ro.romstats.ga=UA-20205669-1 \
 ro.romstats.name=C-RoM \
 ro.romstats.url=http://stats.c-rom.org \
 ro.romstats.version=$(CROM_VERSION)
-
--include vendor/crom/sepolicy/sepolicy.mk
