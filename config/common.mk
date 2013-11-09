@@ -32,12 +32,13 @@ PRODUCT_PACKAGES += \
     Calendar \
     Camera \
     CMFileManager \
-    CTool \
+#    CTool \
     DashClock \
     Development \
     Galaxy4 \
     HALO \
     HoloSpiralWallpaper \
+    Launcher3 \
     LiveWallpapers \
     LiveWallpapersPicker \
     NoiseField \
@@ -49,7 +50,6 @@ PRODUCT_PACKAGES += \
     SunBeam \
     Superuser \
     su \
-#   Trebuchet \
     VoicePlus
 
 # CM Packages
@@ -68,9 +68,9 @@ PRODUCT_PACKAGES += \
     CellBroadcastReceiver
 
 # CM Hardware Abstraction Framework
-PRODUCT_PACKAGES += \
-    org.cyanogenmod.hardware \
-    org.cyanogenmod.hardware.xml
+#PRODUCT_PACKAGES += \
+#    org.cyanogenmod.hardware \
+#    org.cyanogenmod.hardware.xml
 
 PRODUCT_PACKAGES += \
     armzipalign \
@@ -96,8 +96,8 @@ PRODUCT_PACKAGES += \
     start-ssh
 
 # Launcher
-PRODUCT_COPY_FILES += \
-    vendor/crom/proprietary/NovaLauncher/NovaLauncher.apk:system/app/NovaLauncher.apk
+#PRODUCT_COPY_FILES += \
+#    vendor/crom/proprietary/NovaLauncher/NovaLauncher.apk:system/app/NovaLauncher.apk
 
 # SunBeam LWP
 PRODUCT_COPY_FILES += \
