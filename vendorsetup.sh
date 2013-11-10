@@ -1,1 +1,2 @@
 add_lunch_combo crom_galaxysmtd-userdebug
+add_lunch_combo crom_mako-userdebug
