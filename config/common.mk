@@ -50,7 +50,8 @@ PRODUCT_PACKAGES += \
     SunBeam \
     Superuser \
     su \
-    VoicePlus
+    VoicePlus \
+    libemoji
 
 # CM Packages
 PRODUCT_PACKAGES += \
