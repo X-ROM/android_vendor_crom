@@ -8,10 +8,6 @@ $(call inherit-product, vendor/crom/config/common.mk)
 PRODUCT_COPY_FILES += \
     vendor/crom/prebuilt/common/media/hdpi/bootanimation.zip:system/media/bootanimation.zip
 
-# packages
-PRODUCT_PACKAGES += \
-  Mms
-
 # ringtones
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=Hydra.ogg \
