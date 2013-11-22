@@ -175,6 +175,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
+# NFC
+PRODUCT_COPY_FILES += \
+    vendor/crom/config/permissions/com.crom.android.xml:system/etc/permissions/com.crom.android.xml \
+    vendor/crom/config/permissions/com.crom.nfc.enhanced.xml:system/etc/permissions/com.crom.nfc.enhanced.xml
+
 # version
 RELEASE = false
 CROM_VERSION_MAJOR = 4
