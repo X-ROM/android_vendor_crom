@@ -51,7 +51,7 @@ PRODUCT_PACKAGES += \
     Superuser \
     su \
     VoicePlus \
-    libemoj
+    libemoji
 
 # CM Packages
 PRODUCT_PACKAGES += \
