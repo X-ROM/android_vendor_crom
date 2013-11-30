@@ -31,7 +31,7 @@ PRODUCT_PACKAGES += \
     Calendar \
     Camera \
     CMFileManager \
-#    CTool \
+    CTool \
     DashClock \
     Development \
     Galaxy4 \
@@ -68,9 +68,9 @@ PRODUCT_PACKAGES += \
     CellBroadcastReceiver
 
 # CM Hardware Abstraction Framework
-#PRODUCT_PACKAGES += \
-#    org.cyanogenmod.hardware \
-#    org.cyanogenmod.hardware.xml
+PRODUCT_PACKAGES += \
+    org.cyanogenmod.hardware \
+    org.cyanogenmod.hardware.xml
 
 PRODUCT_PACKAGES += \
     armzipalign \
