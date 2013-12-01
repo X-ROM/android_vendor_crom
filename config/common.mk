@@ -52,6 +52,11 @@ PRODUCT_PACKAGES += \
     VoicePlus \
     libemoji
 
+# Screen Recorder
+PRODUCT_PACKAGES += \
+    ScreenRecorder \
+    libscreenrecorder
+
 # CM Packages
 PRODUCT_PACKAGES += \
     audio_effects.conf \
