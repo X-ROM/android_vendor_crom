@@ -154,6 +154,11 @@ PRODUCT_COPY_FILES += \
     vendor/crom/config/permissions/com.crom.android.xml:system/etc/permissions/com.crom.android.xml \
     vendor/crom/config/permissions/com.crom.nfc.enhanced.xml:system/etc/permissions/com.crom.nfc.enhanced.xml
 
+# HFM Files
+PRODUCT_COPY_FILES += \
+        vendor/crom/prebuilt/etc/hosts.alt:system/etc/hosts.alt \
+        vendor/crom/prebuilt/etc/hosts.og:system/etc/hosts.og
+
 # version
 RELEASE = false
 CROM_VERSION_MAJOR = BETA
