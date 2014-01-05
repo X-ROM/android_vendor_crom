@@ -41,7 +41,7 @@ PRODUCT_PACKAGES += \
     DashClock \
     Development \
     Galaxy4 \
-    HALO \
+    #HALO \
     HoloSpiralWallpaper \
     Launcher3 \
     LiveWallpapers \
