@@ -55,6 +55,7 @@ PRODUCT_PACKAGES += \
     Superuser \
     su \
     Torch \
+    KitKatWhite \
     VoicePlus \
     audio_effects.conf \
     libemoji
