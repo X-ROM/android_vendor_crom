@@ -19,8 +19,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy \
-    ro.com.android.dataroaming=false \
-    persist.sys.root_access=3
+    ro.com.android.dataroaming=false
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
@@ -136,12 +135,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/crom/prebuilt/common/etc/init.crom.rc:root/init.crom.rc
 
-# initd
-PRODUCT_COPY_FILES += \
-    vendor/crom/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit \
-    vendor/crom/prebuilt/common/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
-    vendor/crom/prebuilt/common/etc/liberty.bsh:system/etc/liberty.bsh \
-    vendor/crom/prebuilt/common/etc/init_trigger.disabled:system/etc/init_trigger.disabled
 
 # SELinux filesystem labels
 PRODUCT_COPY_FILES += \
