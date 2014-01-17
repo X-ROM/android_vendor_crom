@@ -19,8 +19,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy \
-    ro.com.android.dataroaming=false
+    ro.com.android.dataroaming=false \
+    persist.sys.root_access=3
 
+# selinux dialog
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
 
@@ -33,22 +35,19 @@ PRODUCT_PACKAGES += \
     Apollo \
     BlueBalls \
     BluetoothExt \
-    Calendar \
     Camera \
-    CMFileManager \
     CTool \
-    DashClock \
     Development \
+    DSPManager \
+    CMFileManager \
     Galaxy4 \
-    #HALO \
-    HoloSpiralWallpaper \
-    Launcher3 \
+    LatinIME \
+    libcyanogen-dsp \
     LiveWallpapers \
     LiveWallpapersPicker \
+    LockClock \
     NoiseField \
-    PermissionsManager \
     PhaseBeam \
-    BlueBalls \
     PhotoTable \
     ROMStats \
     SunBeam \
@@ -56,23 +55,13 @@ PRODUCT_PACKAGES += \
     su \
     Torch \
     VoicePlus \
+    audio_effects.conf \
     libemoji
 
-# Screen Recorder
+# Screen recorder
 PRODUCT_PACKAGES += \
     ScreenRecorder \
     libscreenrecorder
-
-# CM Packages
-PRODUCT_PACKAGES += \
-    audio_effects.conf \
-    DSPManager \
-    libcyanogen-dsp
-
-# prebuilts
-PRODUCT_PACKAGES += \
-    LatinIME \
-    LockClock 
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
@@ -80,17 +69,15 @@ PRODUCT_PACKAGES += \
     org.cyanogenmod.hardware.xml
 
 PRODUCT_PACKAGES += \
-    armzipalign \
     e2fsck \
-    fsck.exfat \
     mke2fs \
     tune2fs \
-    mkfs.exfat \
-    mount.exfat \
     nano \
+    mount.exfat \
+    fsck.exfat \
+    mkfs.exfat \
     ntfsfix \
     ntfs-3g
-
 
 # Openssh
 PRODUCT_PACKAGES += \
@@ -102,22 +89,10 @@ PRODUCT_PACKAGES += \
     ssh-keygen \
     start-ssh
 
-# Launcher
-#PRODUCT_COPY_FILES += \
-#    vendor/crom/proprietary/NovaLauncher/NovaLauncher.apk:system/app/NovaLauncher.apk
-
-# SunBeam LWP
-PRODUCT_COPY_FILES += \
-    vendor/crom/prebuilt/common/app/SunBeam.apk:system/app/SunBeam.apk
-
-# Update Me
-PRODUCT_COPY_FILES += \
-    vendor/crom/proprietary/UpdateMe/UpdateMe.apk:system/app/UpdateMe.apk
-
-# Languages
+# languages
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-# Themes
+# themes
 include vendor/crom/config/theme_chooser.mk
 
 #korean
@@ -135,25 +110,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/crom/prebuilt/common/etc/init.crom.rc:root/init.crom.rc
 
-
-# SELinux filesystem labels
-PRODUCT_COPY_FILES += \
-    vendor/crom/prebuilt/common/etc/init.d/50selinuxrelabel:system/etc/init.d/50selinuxrelabel
-
-# build.prop tweaks
-PRODUCT_PROPERTY_OVERRIDES += \
-  ro.kernel.android.checkjni=0 \
-  ro.media.enc.jpeg.quality=100 \
-  debug.sf.hw=1 \
-  pm.sleep_mode=0 \
-  video.accelerate.hw=1 \
-  persist.sys.root_access=3
-
-# Compcache/Zram support
-PRODUCT_COPY_FILES += \
-    vendor/crom/prebuilt/common/bin/compcache:system/bin/compcache \
-    vendor/crom/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache
-
 # prebuilt
 PRODUCT_COPY_FILES += \
     vendor/crom/prebuilt/common/xbin/sysro:system/xbin/sysro \
@@ -162,7 +118,7 @@ PRODUCT_COPY_FILES += \
     vendor/crom/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 
 #backup tool
-CROM_BUILD = true
+crom_BUILD = true
 PRODUCT_COPY_FILES += \
     vendor/crom/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/crom/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
@@ -171,11 +127,15 @@ PRODUCT_COPY_FILES += \
     vendor/crom/prebuilt/common/bin/99-backup.sh:system/addon.d/99-backup.sh \
     vendor/crom/prebuilt/common/etc/backup.conf:system/etc/backup.conf
 
+# SELinux filesystem labels
+PRODUCT_COPY_FILES += \
+    vendor/crom/prebuilt/common/etc/init.d/50selinuxrelabel:system/etc/init.d/50selinuxrelabel
+
 # sip/voip
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
-# NFC
+# nfc
 PRODUCT_COPY_FILES += \
     vendor/crom/config/permissions/com.crom.android.xml:system/etc/permissions/com.crom.android.xml \
     vendor/crom/config/permissions/com.crom.nfc.enhanced.xml:system/etc/permissions/com.crom.nfc.enhanced.xml

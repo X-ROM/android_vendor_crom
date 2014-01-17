@@ -5,8 +5,8 @@ include frameworks/base/data/sounds/NewAudio.mk
 $(call inherit-product, vendor/crom/config/common.mk)
 
 # gps
-PRODUCT_COPY_FILES += \
-    vendor/crom/prebuilt/common/etc/gps.conf:system/etc/gps.conf
+#PRODUCT_COPY_FILES += \
+#    vendor/crom/prebuilt/common/etc/gps.conf:system/etc/gps.conf
 
 # media
 #PRODUCT_COPY_FILES += \
