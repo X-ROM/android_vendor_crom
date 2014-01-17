@@ -35,6 +35,7 @@ PRODUCT_PACKAGES += \
     Apollo \
     BlueBalls \
     BluetoothExt \
+    Calendar \
     Camera \
     CTool \
     Development \
@@ -118,7 +119,7 @@ PRODUCT_COPY_FILES += \
     vendor/crom/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 
 #backup tool
-crom_BUILD = true
+CROM_BUILD = true
 PRODUCT_COPY_FILES += \
     vendor/crom/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/crom/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
@@ -126,6 +127,15 @@ PRODUCT_COPY_FILES += \
     vendor/crom/prebuilt/common/bin/blacklist:system/addon.d/blacklist \
     vendor/crom/prebuilt/common/bin/99-backup.sh:system/addon.d/99-backup.sh \
     vendor/crom/prebuilt/common/etc/backup.conf:system/etc/backup.conf
+
+# Compcache/Zram support
+PRODUCT_COPY_FILES += \
+    vendor/crom/prebuilt/common/bin/compcache:system/bin/compcache \
+    vendor/crom/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache
+
+# SunBeam LWP
+PRODUCT_COPY_FILES += \
+    vendor/crom/prebuilt/common/app/SunBeam.apk:system/app/SunBeam.apk
 
 # SELinux filesystem labels
 PRODUCT_COPY_FILES += \
