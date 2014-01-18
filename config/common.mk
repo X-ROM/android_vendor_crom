@@ -38,6 +38,7 @@ PRODUCT_PACKAGES += \
     Calendar \
     Camera \
     CTool \
+    DashClock \
     Development \
     DSPManager \
     CMFileManager \
@@ -48,6 +49,7 @@ PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     LockClock \
     NoiseField \
+    OmniSwitch \
     PhaseBeam \
     PhotoTable \
     ROMStats \
