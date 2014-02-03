@@ -141,10 +141,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/crom/prebuilt/common/app/SunBeam.apk:system/app/SunBeam.apk
 
-# C-RoM Hub
-PRODUCT_COPY_FILES += \
-    vendor/crom/proprietary/cromhub/C-Hub.apk:system/app/C-Hub.apk
-
 # SELinux filesystem labels
 PRODUCT_COPY_FILES += \
     vendor/crom/prebuilt/common/etc/init.d/50selinuxrelabel:system/etc/init.d/50selinuxrelabel
