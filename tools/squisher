@@ -140,7 +140,7 @@ echo -e "  ※==================================================================
 echo -e "  "$CL_RED"Package complete"$CL_RST" : "$CL_CYN"$OUTFILE "$CL_RST
 echo -e     "$CL_GRN"MD5": $(cat $img.md5sum | awk '{ print $1 }')"$CL_RST
 echo -e "  ※===================================================================================================※   "
-echo
+echo -e
 )
 
 if [ $CROM_BUILD ] && [ "$CROM_BUILD" -eq 1 ]; then
@@ -149,6 +149,7 @@ if [ $CROM_BUILD ] && [ "$CROM_BUILD" -eq 1 ]; then
 	echo -e
 	$ANDROID_BUILD_TOP/vendor/crom/tools/changelog_creator.sh $CROM_VERSION.zip $OUT/
 	echo -e
+
 fi
 
 exit 0
