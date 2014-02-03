@@ -179,6 +179,12 @@ ro.romstats.name=C-RoM \
 ro.romstats.url=http://stats.c-rom.org \
 ro.romstats.version=$(CROM_VERSION)
 
+#myHUB
+PRODUCT_PROPERTY_OVERRIDES += \
+myhub.db.id=C_RoM \
+myhub.rom=C-RoM \
+myhub.rom.ver=1.0.0
+
 # Qualcomm Optimized Dalvik
 LOCAL_PATH:= vendor/crom/prebuilt
 
