@@ -143,4 +143,12 @@ echo -e "  ※==================================================================
 echo
 )
 
+if [ $CROM_BUILD ] && [ "$CROM_BUILD" -eq 1 ]; then
+	echo -e
+	echo -e $CL_CYN"Creating Changelog"$CL_RST
+	echo -e
+	$ANDROID_BUILD_TOP/vendor/crom/tools/changelog_creator.sh $CROM_VERSION.zip $OUT/
+	echo -e
+fi
+
 exit 0
