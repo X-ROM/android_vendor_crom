@@ -134,12 +134,21 @@ echo
 (
 img=`basename $OUTFILE`
 cd `dirname $OUTFILE`
-$MD5 $img >$img.md5sum
+$MD5 $img > $img.md5sum
 echo
-echo -e "  ※===================================================================================================※   "
-echo -e "  "$CL_RED"Package complete"$CL_RST" : "$CL_CYN"$OUTFILE "$CL_RST
-echo -e     "$CL_GRN"MD5": $(cat $img.md5sum | awk '{ print $1 }')"$CL_RST
-echo -e "  ※===================================================================================================※   "
+echo $CL_GRN"Package complete: $OUTFILE"$CL_RST
+echo $CL_GRN"md5: $(cat $img.md5sum | awk '{ print $1 }')"$CL_RST
+echo
+)
+
+$MD5 $img > $img.md5sum
+ZIPSIZE=`ls -lah $OUTFILE | awk '{ print $5}' `
+echo -e
+echo -e $CL_CYN"===========-Package complete-==========="$CL_RST
+echo -e $CL_CYN"zip:"$CL_MAG" $OUTFILE"$CL_RST
+echo -e $CL_CYN"md5:"$CL_MAG" $(cat $img.md5sum | awk '{ print $1 }')"$CL_RST
+echo -e $CL_CYN"size:"$CL_MAG" $ZIPSIZE"$CL_RST
+echo -e $CL_CYN"========================================"$CL_RST
 echo -e
 )
 
@@ -147,9 +156,8 @@ if [ $CROM_BUILD ] && [ "$CROM_BUILD" -eq 1 ]; then
 	echo -e
 	echo -e $CL_CYN"Creating Changelog"$CL_RST
 	echo -e
-	$ANDROID_BUILD_TOP/vendor/crom/tools/changelog_creator.sh $CROM_VERSION.zip $OUT/
+	$ANDROID_BUILD_TOP/vendor/crom/tools/changelog_creator.sh $MODVERSION.zip $OUT/
 	echo -e
-
 fi
 
 exit 0
