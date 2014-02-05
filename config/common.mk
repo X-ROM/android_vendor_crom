@@ -30,6 +30,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.camera-sound=1
 
+# Thank you, please drive thru!
+PRODUCT_PROPERTY_OVERRIDES += persist.sys.dun.override=0
+
 # packages
 PRODUCT_PACKAGES += \
     Apollo \
