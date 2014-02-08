@@ -42,6 +42,7 @@ PRODUCT_PACKAGES += \
     Development \
     DSPManager \
     CMFileManager \
+    CRoMAbout \
     Galaxy4 \
     LatinIME \
     libcyanogen-dsp \
