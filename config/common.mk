@@ -143,7 +143,7 @@ PRODUCT_COPY_FILES += \
 
 # Catlog Logcat reader
 PRODUCT_COPY_FILES += \
-    vendor/crom/prebuilt/common/app/Catlog_v_1_4.apk:/system/app/Catlog_v_1_4.apk
+    vendor/crom/prebuilt/common/app/Catlog.apk:system/app/Catlog.apk
 # SELinux filesystem labels
 PRODUCT_COPY_FILES += \
     vendor/crom/prebuilt/common/etc/init.d/50selinuxrelabel:system/etc/init.d/50selinuxrelabel
