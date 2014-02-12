@@ -141,9 +141,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/crom/prebuilt/common/app/SunBeam.apk:system/app/SunBeam.apk
 
-# Catlog Logcat reader
-PRODUCT_COPY_FILES += \
-    vendor/crom/prebuilt/common/app/Catlog.apk:system/app/Catlog.apk
 # SELinux filesystem labels
 PRODUCT_COPY_FILES += \
     vendor/crom/prebuilt/common/etc/init.d/50selinuxrelabel:system/etc/init.d/50selinuxrelabel
@@ -164,7 +161,7 @@ PRODUCT_COPY_FILES += \
 
 # version
 RELEASE = false
-CROM_VERSION_MAJOR = v1.0
+CROM_VERSION_MAJOR = v2.0
 CROM_VERSION := "C-RoM-KK-$(CROM_VERSION_MAJOR)"-$(shell date +%Y%m%d-%H%M)
 
 PRODUCT_PROPERTY_OVERRIDES += \
