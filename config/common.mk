@@ -38,8 +38,6 @@ PRODUCT_PACKAGES += \
     Apollo \
     BlueBalls \
     BluetoothExt \
-    Calendar \
-    Camera \
     CTool \
     DashClock \
     Development \
@@ -47,7 +45,6 @@ PRODUCT_PACKAGES += \
     CMFileManager \
     CRoMAbout \
     Galaxy4 \
-    LatinIME \
     libcyanogen-dsp \
     LiveWallpapers \
     LiveWallpapersPicker \
