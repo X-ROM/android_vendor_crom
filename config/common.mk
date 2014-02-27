@@ -38,7 +38,6 @@ PRODUCT_PACKAGES += \
     Apollo \
     BlueBalls \
     BluetoothExt \
-    CTool \
     DashClock \
     Development \
     DSPManager \
