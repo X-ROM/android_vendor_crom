@@ -50,6 +50,7 @@ PRODUCT_PACKAGES += \
     LockClock \
     NoiseField \
     OmniSwitch \
+    PerformanceControl \
     PhaseBeam \
     PhotoTable \
     ROMStats \
