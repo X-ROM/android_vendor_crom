@@ -44,13 +44,12 @@ PRODUCT_PACKAGES += \
     CMFileManager \
     CRoMAbout \
     Galaxy4 \
+    KernelTweaker \
     libcyanogen-dsp \
     LiveWallpapers \
     LiveWallpapersPicker \
     LockClock \
     NoiseField \
-    OmniSwitch \
-    PerformanceControl \
     PhaseBeam \
     PhotoTable \
     ROMStats \
@@ -161,7 +160,7 @@ PRODUCT_COPY_FILES += \
 
 # version
 RELEASE = false
-CROM_VERSION_MAJOR = v3.0
+CROM_VERSION_MAJOR = v4.0
 CROM_VERSION := "C-RoM-KK-$(CROM_VERSION_MAJOR)"-$(shell date +%Y%m%d-%H%M)
 
 PRODUCT_PROPERTY_OVERRIDES += \
