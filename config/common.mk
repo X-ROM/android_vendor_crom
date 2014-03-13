@@ -50,6 +50,7 @@ PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     LockClock \
     NoiseField \
+    OmniSwitch \
     PhaseBeam \
     PhotoTable \
     ROMStats \
@@ -160,7 +161,7 @@ PRODUCT_COPY_FILES += \
 
 # version
 RELEASE = false
-CROM_VERSION_MAJOR = v5.0
+CROM_VERSION_MAJOR = v5.1
 CROM_VERSION := "C-RoM-KK-$(CROM_VERSION_MAJOR)"-$(shell date +%Y%m%d-%H%M)
 
 PRODUCT_PROPERTY_OVERRIDES += \
