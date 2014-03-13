@@ -132,6 +132,10 @@ PRODUCT_COPY_FILES += \
     vendor/crom/prebuilt/common/bin/99-backup.sh:system/addon.d/99-backup.sh \
     vendor/crom/prebuilt/common/etc/backup.conf:system/etc/backup.conf
 
+#MyBackup
+PRODUCT_COPY_FILES += \
+       vendor/crom/prebuilt/common/app/MyBackupRoot.apk:system/app/MyBackupRoot.apk
+
 # Compcache/Zram support
 PRODUCT_COPY_FILES += \
     vendor/crom/prebuilt/common/bin/compcache:system/bin/compcache \
