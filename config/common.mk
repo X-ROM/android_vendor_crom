@@ -40,7 +40,6 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     CMFileManager \
     CRoMAbout \
-    CRoMSetupWizard \
     DashClock \
     Development \
     DSPManager \
@@ -162,7 +161,7 @@ PRODUCT_COPY_FILES += \
 
 # version
 RELEASE = false
-CROM_VERSION_MAJOR = v5.4
+CROM_VERSION_MAJOR = v5.5
 CROM_VERSION := "C-RoM-KK-$(CROM_VERSION_MAJOR)"-$(shell date +%Y%m%d-%H%M)
 
 PRODUCT_PROPERTY_OVERRIDES += \
