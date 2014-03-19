@@ -38,11 +38,12 @@ PRODUCT_PACKAGES += \
     Apollo \
     BlueBalls \
     BluetoothExt \
+    CMFileManager \
+    CRoMAbout \
+    CRoMSetupWizard \
     DashClock \
     Development \
     DSPManager \
-    CMFileManager \
-    CRoMAbout \
     Galaxy4 \
     KernelTweaker \
     libcyanogen-dsp \
