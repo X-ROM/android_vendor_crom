@@ -158,7 +158,8 @@ PRODUCT_COPY_FILES += \
 # version
 RELEASE = false
 CROM_VERSION_MAJOR = v5.7
-CROM_VERSION := "C-RoM-KK-$(CROM_VERSION_MAJOR)"-$(shell date +%Y%m%d)
+
+CROM_VERSION := "C-RoM-KK-$(TARGET_PRODUCT)-$(CROM_VERSION_MAJOR)"-$(shell date +%Y%m%d)
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.crom.version=$(CROM_VERSION)
