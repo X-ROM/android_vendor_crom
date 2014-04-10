@@ -35,9 +35,9 @@ PRODUCT_PROPERTY_OVERRIDES += persist.sys.dun.override=0
 
 # packages
 PRODUCT_PACKAGES += \
+    BluetoothExt \
     Apollo \
     BlueBalls \
-    BluetoothExt \
     CMFileManager \
     CRoMAbout \
     DashClock \
