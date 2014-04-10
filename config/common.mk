@@ -132,10 +132,6 @@ PRODUCT_COPY_FILES += \
     vendor/crom/prebuilt/common/bin/99-backup.sh:system/addon.d/99-backup.sh \
     vendor/crom/prebuilt/common/etc/backup.conf:system/etc/backup.conf
 
-# Compcache/Zram support
-PRODUCT_COPY_FILES += \
-    vendor/crom/prebuilt/common/bin/compcache:system/bin/compcache \
-    vendor/crom/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache
 
 # SunBeam LWP
 PRODUCT_COPY_FILES += \
