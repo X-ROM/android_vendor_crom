@@ -58,6 +58,7 @@ PRODUCT_PACKAGES += \
     Superuser \
     su \
     Torch \
+    Trebuchet \
     VoicePlus \
     audio_effects.conf \
     libemoji
