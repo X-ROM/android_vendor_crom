@@ -157,7 +157,7 @@ PRODUCT_COPY_FILES += \
 
 # version
 RELEASE = false
-CROM_VERSION_MAJOR = v5.8
+CROM_VERSION_MAJOR = v5.9
 
 CROM_VERSION := "C-RoM-KK-$(CROM_VERSION_MAJOR)"-$(shell date +%Y%m%d)
 
