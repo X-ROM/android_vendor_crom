@@ -40,6 +40,7 @@ PRODUCT_PACKAGES += \
     BlueBalls \
     CMFileManager \
     CRoMAbout \
+    CRoMOTA \
     DashClock \
     Development \
     DSPManager \
