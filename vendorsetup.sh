@@ -1,3 +1,4 @@
+add_lunch_combo crom_d2lte-userdebug
 add_lunch_combo crom_galaxysmtd-userdebug
 add_lunch_combo crom_hlte-userdebug
 add_lunch_combo crom_i9100-userdebug
