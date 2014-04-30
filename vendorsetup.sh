@@ -12,6 +12,7 @@ add_lunch_combo crom_hammerhead-userdebug
 add_lunch_combo crom_falcon-userdebug
 add_lunch_combo crom_n7000-userdebug
 add_lunch_combo crom_maguro-userdebug
+add_lunch_combo crom_toro-userdebug
 add_lunch_combo crom_m8-userdebug
 add_lunch_combo crom_grouper-userdebug
 add_lunch_combo crom_tilapia-userdebug
