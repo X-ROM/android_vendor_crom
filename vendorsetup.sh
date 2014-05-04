@@ -1,4 +1,5 @@
 add_lunch_combo crom_anzu-userdebug
+add_lunch_combo crom_crespo-userdebug
 add_lunch_combo crom_d2lte-userdebug
 add_lunch_combo crom_flo-userdebug
 add_lunch_combo crom_galaxysmtd-userdebug
