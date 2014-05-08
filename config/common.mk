@@ -99,8 +99,8 @@ PRODUCT_PACKAGES += \
 # languages
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-# themes
-include vendor/crom/config/theme_chooser.mk
+# Themes
+include vendor/crom/config/themes_common.mk
 
 #korean
 $(call inherit-product-if-exists, external/naver-fonts/fonts.mk)
