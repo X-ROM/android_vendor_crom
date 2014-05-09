@@ -96,6 +96,13 @@ PRODUCT_PACKAGES += \
     ssh-keygen \
     start-ssh
 
+# Stagefright FFMPEG plugin
+PRODUCT_PACKAGES += \
+    libstagefright_soft_ffmpegadec \
+    libstagefright_soft_ffmpegvdec \
+    libFFmpegExtractor \
+    libnamparser
+
 # languages
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
@@ -156,7 +163,7 @@ PRODUCT_COPY_FILES += \
 # version
 RELEASE = false
 CROM_VERSION_MAJOR = 6
-CROM_VERSION_MINOR = 3
+CROM_VERSION_MINOR = 4
 
 
 CROM_VERSION := "C-RoM-KK-v$(CROM_VERSION_MAJOR).$(CROM_VERSION_MINOR)"-$(shell date +%Y%m%d)
